@@ -1,0 +1,2 @@
+本地安装资源
+mvn install:install-file -Dfile=E:\jar\ojdbc8-12.2.0.1.jar -DgroupId=com.oracle -DartifactId=ojdbc8 -Dversion=12.2.0.1 -Dpackaging=jar
