@@ -1,2 +1,11 @@
 本地安装资源
 mvn install:install-file -Dfile=E:\jar\ojdbc8-12.2.0.1.jar -DgroupId=com.oracle -DartifactId=ojdbc8 -Dversion=12.2.0.1 -Dpackaging=jar
+
+
+
+
+同时指定jar和pom.xml
+mvn deploy:deploy-file --settings D:/company/apps/maven/conf/settings.xml -DgroupId=ctg.cas.client.core -DartifactId=ctg-cas-client-core -Dversion=3.2.1 -Dpackaging=jar -Dfile=ctg-cas-client-core-3.2.1.jar -Durl=http://10.15.2.56:8081/repository/tspp-maven/ -DpomFile=pom.xml -DrepositoryId=Releases
+
+
+
